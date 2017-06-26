@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Game : MonoBehaviour {
 
+	ConversationObject conversation;
+
 	// Use this for initialization
 	void Start () {
-		ConversationObject conversation = new ConversationObject("phrases.txt");
+		conversation = new ConversationObject("phrases.txt");
 	}
 	
 	// Update is called once per frame

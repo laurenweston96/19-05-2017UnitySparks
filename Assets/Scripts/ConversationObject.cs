@@ -5,6 +5,7 @@ using UnityEngine;
 public class ConversationObject : MonoBehaviour {
 
 	string filename;
+	LineValues lineValues;
 
 	ConversationObject(string inputFilename) {
 		filename = inputFilename;
@@ -12,22 +13,25 @@ public class ConversationObject : MonoBehaviour {
 		//Open up the file and read the first line
 		string line;
 
-		LineValues lineValues = new LineValues (line);
+		lineValues = new LineValues (line);
 	}
 
 	public int getNextLineNumber(int lineNum)
 	{
 		print ("Getting next line number");
+		return -1;
 	}
 
 	public int getIDOfNextPhrase(int lineNum)
 	{
 		print ("Getting the ID of the first of the next phrases. The other two phrases are two after this one.");
+		return -1;
 	}
 
-	public int getPhrase(int lineNum)
+	public string getPhrase(int lineNum)
 	{
 		print ("Getting the phrase at line " + lineNum);
+		return "Sample Phrase";
 	}
 
 	public void getGeneralRating(int lineNum)
@@ -46,7 +50,7 @@ public class ConversationObject : MonoBehaviour {
 	}
 
 
-	private void getLineParts
+	//private void getLineParts
 
 
 	// Use this for initialization
