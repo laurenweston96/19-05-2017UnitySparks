@@ -1,0 +1,18 @@
+4,Hi ,3,,
+4,Yo ,-4,CHAV,
+4,Howdy ,-2,COWBOY,CHAV
+7,beautiful ,6,ROMANTIC,LAIDBACK.GOTH.SHY
+7,partner ,-4,COWBOY,
+7,mate ,-2,CHAV.LAIDBACK,
+10,you are ,4,,
+13,how did ,2,,
+16,I want ,1,,
+,cool ,3,CHAV,
+,wild ,0,COWBOY,SHY
+,,my type ,6,ROMANTIC,LAIDBACK
+,,your dog die?,-7,GOTH,
+,,you get here?,5,,
+,,I know we'd be perfect?,2,ROMANTIC,GOTH.LAIDBACK
+,,you.,2,COWBOY.ROMANTIC,SHY
+,,to go.,-7,,
+,,my meemaw.,-7,ROMANTIC.SHY,
