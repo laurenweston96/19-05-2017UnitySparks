@@ -2,64 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConversationObject : MonoBehaviour {
+public class ConversationObject {
 
-	string filename;
-	LineValues lineValues;
+	List<LineValues> allPhraseLines = new List<LineValues>();
 
-	ConversationObject(string inputFilename) {
-		filename = inputFilename;
-
-		//Open up the file and read the first line
+	public ConversationObject(string inputFilename) {
 		string line;
+		LineValues lineValues;
 
-		lineValues = new LineValues (line);
-	}
+		System.IO.StreamReader file = new System.IO.StreamReader (inputFilename);
 
-	public int getNextLineNumber(int lineNum)
-	{
-		print ("Getting next line number");
-		return -1;
+		while ((line = file.ReadLine ()) != null) {
+			Debug.Log ("Adding line: " + line);
+
+			lineValues = new LineValues (line);
+			allPhraseLines.Add (lineValues);
+		}
+
+		Debug.Log("All lines are now added");
 	}
 
 	public int getIDOfNextPhrase(int lineNum)
 	{
-		print ("Getting the ID of the first of the next phrases. The other two phrases are two after this one.");
-		return -1;
+		Debug.Log ("At line number " + lineNum + " we're saying that the next ID is at " + allPhraseLines[lineNum-1].getIDOfNextPhrase());
+		return allPhraseLines[lineNum-1].getIDOfNextPhrase();
 	}
 
 	public string getPhrase(int lineNum)
 	{
-		print ("Getting the phrase at line " + lineNum);
-		return "Sample Phrase";
+		Debug.Log ("Getting the phrase at line " + lineNum);
+		return allPhraseLines[lineNum-1].getPhrase();
 	}
 
-	public void getGeneralRating(int lineNum)
+	public int getGeneralRating(int lineNum)
 	{
-		print ("Getting General Rating");
+		Debug.Log ("Getting General Rating");
+		return allPhraseLines[lineNum-1].getGeneralRating();
 	}
 
 	public void getImpresses(int lineNum)
 	{
-		print ("Getting Impresses");
+		Debug.Log ("Getting Impresses");
 	}
 
 	public void getOffends(int lineNum)
 	{
-		print ("Getting Offends");
-	}
-
-
-	//private void getLineParts
-
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		Debug.Log ("Getting Offends");
 	}
 }

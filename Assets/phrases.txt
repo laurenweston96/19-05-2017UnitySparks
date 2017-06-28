@@ -9,10 +9,10 @@
 16,I want ,1,,
 ,cool ,3,CHAV,
 ,wild ,0,COWBOY,SHY
-,,my type ,6,ROMANTIC,LAIDBACK
-,,your dog die?,-7,GOTH,
-,,you get here?,5,,
-,,I know we'd be perfect?,2,ROMANTIC,GOTH.LAIDBACK
-,,you.,2,COWBOY.ROMANTIC,SHY
-,,to go.,-7,,
-,,my meemaw.,-7,ROMANTIC.SHY,
+,my type ,6,ROMANTIC,LAIDBACK
+,your dog die?,-7,GOTH,
+,you get here?,5,,
+,I know we'd be perfect?,2,ROMANTIC,GOTH.LAIDBACK
+,you.,2,COWBOY.ROMANTIC,SHY
+,to go.,-7,,
+,my meemaw.,-7,ROMANTIC.SHY,

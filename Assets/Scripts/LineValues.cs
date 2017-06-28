@@ -3,30 +3,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LineValues : MonoBehaviour {
-
+public class LineValues {
 	int IDOfNextPhrase;
 	string phrase;
-	string generalRating;
-	string impresses;
-	string offends;
+	int generalRating;
+	//string impresses;
+	//string offends;
 
-	LineValues(string line) {
+	public LineValues(string line) {
 		
 		string[] lineParts = line.Split (',');
 
-		if (Int32.TryParse (lineParts [0], out IDOfNextPhrase)) {
-			print ("We parsed this number!");
-		} else
-			print ("We couldn't parse " + lineParts [0] + " as a number");
+		if (lineParts.Length != 5)
+			Debug.Log ("There aren't 5 items in the line. There are " + lineParts.Length);
 
+		// ID of the next phrase, if there is one, make sure you can read it as a number
+		if (lineParts [0] != "" && !Int32.TryParse (lineParts [0], out IDOfNextPhrase))
+			Debug.Log ("We couldn't parse " + lineParts [0] + " as a number for the ID of the next phrase");
+
+		// Phrase
 		phrase = lineParts [1];
 
-		generalRating = lineParts [2];
+		// General rating
+		if (!Int32.TryParse (lineParts [2], out generalRating))
+			Debug.Log ("We couldn't parse " + lineParts [2] + " as a number for the rating");
 
-		impresses = lineParts [3];
+		//impresses = lineParts [3];
 
-		offends = lineParts [4];
+		//offends = lineParts [4];
+
+		Debug.Log ("ID of next phrase: " + IDOfNextPhrase
+				+ "\nPhrase: " + phrase
+				+ "\nRating: " + generalRating);
 
 	}
 
@@ -39,4 +47,19 @@ public class LineValues : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public int getIDOfNextPhrase() {
+		Debug.Log( "The ID of the next phrase is " + IDOfNextPhrase);
+		return IDOfNextPhrase;
+	}
+
+	public string getPhrase() {
+		return phrase;
+	}
+
+	public int getGeneralRating() {
+		return generalRating;
+	}
+
+
 }
