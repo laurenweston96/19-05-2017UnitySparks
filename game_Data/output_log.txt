@@ -17,7 +17,7 @@ Platform assembly: C:\Users\LaUrE\OneDrive\Documents\19-05-2017UnitySparks\game_
 Loading C:\Users\LaUrE\OneDrive\Documents\19-05-2017UnitySparks\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\LaUrE\OneDrive\Documents\19-05-2017UnitySparks\game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\LaUrE\OneDrive\Documents\19-05-2017UnitySparks\game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.061 seconds
+- Completed reload, in  0.256 seconds
 Platform assembly: C:\Users\LaUrE\OneDrive\Documents\19-05-2017UnitySparks\game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\LaUrE\OneDrive\Documents\19-05-2017UnitySparks\game_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -25,137 +25,85 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.354019 ms
+UnloadTime: 3.135117 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 9a4 -> priority: 1 
-  Thread -> id: 1cb0 -> priority: 1 
+  Thread -> id: 2a1c -> priority: 1 
+  Thread -> id: 27b4 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 26.066757 ms
+UnloadTime: 26.617023 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 284.
-Total: 0.891151 ms (FindLiveObjects: 0.099327 ms CreateObjectMapping: 0.057824 ms MarkObjects: 0.617883 ms  DeleteObjects: 0.113317 ms)
-
-Adding line: 4,Hi ,3,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 305.
+Total: 0.988613 ms (FindLiveObjects: 0.100726 ms CreateObjectMapping: 0.057358 ms MarkObjects: 0.700423 ms  DeleteObjects: 0.126374 ms)
 
 ID of next phrase: 4
-Phrase: Hi 
+Phrase: Hi
 Rating: 3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 4,Yo ,-4,CHAV,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 4
-Phrase: Yo 
+Phrase: Yo
 Rating: -4
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 4,Howdy ,-2,COWBOY,CHAV
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 4
-Phrase: Howdy 
+Phrase: Howdy
 Rating: -2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 7,beautiful ,6,ROMANTIC,LAIDBACK.GOTH.SHY
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 7
-Phrase: beautiful 
+Phrase: beautiful
 Rating: 6
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 7,partner ,-4,COWBOY,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 7
-Phrase: partner 
+Phrase: partner
 Rating: -4
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 7,mate ,-2,CHAV.LAIDBACK,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 7
-Phrase: mate 
+Phrase: mate
 Rating: -2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: 10,you are ,4,,
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 ID of next phrase: 10
-Phrase: you are 
+Phrase: you are
 Rating: 4
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 13,how did ,2,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 13
-Phrase: how did 
+Phrase: how did
 Rating: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 16,I want ,1,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 16
-Phrase: I want 
+Phrase: I want
 Rating: 1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,cool ,3,CHAV,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
-Phrase: cool 
+Phrase: cool
 Rating: 3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,wild ,0,COWBOY,SHY
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
-Phrase: wild 
+Phrase: wild
 Rating: 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,my type ,6,ROMANTIC,LAIDBACK
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
-Phrase: my type 
+Phrase: my type
 Rating: 6
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: ,your dog die?,-7,GOTH,
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -165,17 +113,9 @@ Rating: -7
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,you get here?,5,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
 Phrase: you get here?
 Rating: 5
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: ,I know we'd be perfect?,2,ROMANTIC,GOTH.LAIDBACK
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -185,27 +125,15 @@ Rating: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,you.,2,COWBOY.ROMANTIC,SHY
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
 Phrase: you.
 Rating: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,to go.,-7,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
 Phrase: to go.
 Rating: -7
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: ,my meemaw.,-7,ROMANTIC.SHY,
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -219,139 +147,75 @@ All lines are now added
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Getting the phrase at line 1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Getting the phrase at line 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Getting the phrase at line 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: 4,Hi ,3,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 4
-Phrase: Hi 
+Phrase: Hi
 Rating: 3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 4,Yo ,-4,CHAV,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 4
-Phrase: Yo 
+Phrase: Yo
 Rating: -4
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 4,Howdy ,-2,COWBOY,CHAV
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 4
-Phrase: Howdy 
+Phrase: Howdy
 Rating: -2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 7,beautiful ,6,ROMANTIC,LAIDBACK.GOTH.SHY
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 7
-Phrase: beautiful 
+Phrase: beautiful
 Rating: 6
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 7,partner ,-4,COWBOY,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 7
-Phrase: partner 
+Phrase: partner
 Rating: -4
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 7,mate ,-2,CHAV.LAIDBACK,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 7
-Phrase: mate 
+Phrase: mate
 Rating: -2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: 10,you are ,4,,
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 ID of next phrase: 10
-Phrase: you are 
+Phrase: you are
 Rating: 4
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 13,how did ,2,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 13
-Phrase: how did 
+Phrase: how did
 Rating: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: 16,I want ,1,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 16
-Phrase: I want 
+Phrase: I want
 Rating: 1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,cool ,3,CHAV,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
-Phrase: cool 
+Phrase: cool
 Rating: 3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,wild ,0,COWBOY,SHY
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
-Phrase: wild 
+Phrase: wild
 Rating: 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,my type ,6,ROMANTIC,LAIDBACK
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
-Phrase: my type 
+Phrase: my type
 Rating: 6
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: ,your dog die?,-7,GOTH,
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -361,17 +225,9 @@ Rating: -7
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,you get here?,5,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
 Phrase: you get here?
 Rating: 5
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: ,I know we'd be perfect?,2,ROMANTIC,GOTH.LAIDBACK
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -381,27 +237,15 @@ Rating: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,you.,2,COWBOY.ROMANTIC,SHY
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
 Phrase: you.
 Rating: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Adding line: ,to go.,-7,,
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 ID of next phrase: 0
 Phrase: to go.
 Rating: -7
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Adding line: ,my meemaw.,-7,ROMANTIC.SHY,
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -415,15 +259,51 @@ All lines are now added
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Getting the phrase at line 1
+Getting Impresses
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Getting the phrase at line 2
+Getting Offends
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Getting the phrase at line 3
+Your date hated that
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Impresses
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Offends
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting General Rating
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Impresses
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Offends
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting General Rating
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Impresses
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting Offends
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Getting General Rating
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

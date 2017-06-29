@@ -7,8 +7,8 @@ public class LineValues {
 	int IDOfNextPhrase;
 	string phrase;
 	int generalRating;
-	//string impresses;
-	//string offends;
+	string[] impresses;
+	string[] offends;
 
 	public LineValues(string line) {
 		
@@ -28,9 +28,11 @@ public class LineValues {
 		if (!Int32.TryParse (lineParts [2], out generalRating))
 			Debug.Log ("We couldn't parse " + lineParts [2] + " as a number for the rating");
 
-		//impresses = lineParts [3];
+		// An array of all the people who are impressed by the phrase
+		impresses = lineParts[3].Split('.');
 
-		//offends = lineParts [4];
+		// An array of all the people who are offended by the phrase
+		offends = lineParts [4].Split('.');
 
 		Debug.Log ("ID of next phrase: " + IDOfNextPhrase
 				+ "\nPhrase: " + phrase
@@ -49,7 +51,6 @@ public class LineValues {
 	}
 
 	public int getIDOfNextPhrase() {
-		Debug.Log( "The ID of the next phrase is " + IDOfNextPhrase);
 		return IDOfNextPhrase;
 	}
 
@@ -59,6 +60,14 @@ public class LineValues {
 
 	public int getGeneralRating() {
 		return generalRating;
+	}
+
+	public string[] getImpressesArray() {
+		return impresses;
+	}
+
+	public string[] getOffendsArray() {
+		return offends;
 	}
 
 

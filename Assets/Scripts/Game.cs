@@ -8,12 +8,15 @@ public class Game : MonoBehaviour {
 
 	ConversationObject conversation;
 	int startPhraseID = 1;
+	int score;
 
 	// Use this for initialization
 	void Start () {
 		conversation = new ConversationObject("Assets/phrases.txt");
 
 		setPhrasesFromLine(1);
+
+		GameObject.Find ("Sentence").GetComponent<Text> ().text = "";
 	}
 	
 	// Update is called once per frame
@@ -25,19 +28,20 @@ public class Game : MonoBehaviour {
 
 		if (startPhraseID != 0) {
 
-			int choiceID;
-
-			// Get this choices ID
-			if (!Int32.TryParse (button.name.Substring (6), out choiceID))
+			// Get the buttons ID: 1, 2 or 3
+			int buttonID;
+			if (!Int32.TryParse (button.name.Substring (6), out buttonID))
 				Debug.Log ("Couldn't parse the end of the button name, "
 					+ button.name.Substring (6) + " as a number");
+			
+			// Get the line number of the phrase you chose
+			int choiceLineNum = startPhraseID + buttonID - 1;
 
-			Debug.Log ("You chose " + (startPhraseID + choiceID - 1)
-				+ "\nThe first option was ID " + startPhraseID + " and your choice " 
-				+ choiceID + " was added onto this, with 1 subtracted");
+			appendChoiceToSentence (choiceLineNum);
+			scorePhrase (choiceLineNum);
+
 			// Get the ID of the start of the next phrases
-			int nextID = conversation.getIDOfNextPhrase(startPhraseID + choiceID - 1);
-
+			int nextID = conversation.getIDOfNextPhrase(choiceLineNum);
 
 			// Update the text of the three buttons
 			if (nextID != 0) {
@@ -59,5 +63,39 @@ public class Game : MonoBehaviour {
 			conversation.getPhrase(firstLineNum+1);
 		GameObject.Find("option3").GetComponentInChildren<Text> ().text = 
 			conversation.getPhrase(firstLineNum+2);
+	}
+
+	public void appendChoiceToSentence(int choiceLineNum){
+		GameObject.Find("Sentence").GetComponent<Text>().text += 
+			conversation.getPhrase(choiceLineNum) + " ";
+	}
+
+	public void scorePhrase(int choiceLineNum){
+
+		int rating = 0;
+
+		// Check if your date is particularly impressed or offended first
+		foreach (string impressee in conversation.getImpresses(choiceLineNum))
+			if (impressee == "COWBOY") {
+				Debug.Log ("Your date loved that");
+				rating = 10;
+				break;
+			}
+
+		foreach (string offendee in conversation.getOffends(choiceLineNum))
+			if (offendee == "COWBOY") {
+				Debug.Log ("Your date hated that");
+				rating = -10;
+				break;
+			}
+		
+		// If not, add the general rating
+		if (rating == 0) {
+			rating = conversation.getGeneralRating (choiceLineNum);
+		}
+
+		// Append this rating to the total score and set it
+		score += rating;
+		GameObject.Find("Score").GetComponent<Text>().text = score.ToString();
 	}
 }

@@ -13,8 +13,6 @@ public class ConversationObject {
 		System.IO.StreamReader file = new System.IO.StreamReader (inputFilename);
 
 		while ((line = file.ReadLine ()) != null) {
-			Debug.Log ("Adding line: " + line);
-
 			lineValues = new LineValues (line);
 			allPhraseLines.Add (lineValues);
 		}
@@ -24,13 +22,11 @@ public class ConversationObject {
 
 	public int getIDOfNextPhrase(int lineNum)
 	{
-		Debug.Log ("At line number " + lineNum + " we're saying that the next ID is at " + allPhraseLines[lineNum-1].getIDOfNextPhrase());
 		return allPhraseLines[lineNum-1].getIDOfNextPhrase();
 	}
 
 	public string getPhrase(int lineNum)
 	{
-		Debug.Log ("Getting the phrase at line " + lineNum);
 		return allPhraseLines[lineNum-1].getPhrase();
 	}
 
@@ -40,13 +36,15 @@ public class ConversationObject {
 		return allPhraseLines[lineNum-1].getGeneralRating();
 	}
 
-	public void getImpresses(int lineNum)
+	public string[] getImpresses(int lineNum)
 	{
 		Debug.Log ("Getting Impresses");
+		return allPhraseLines[lineNum-1].getImpressesArray();
 	}
 
-	public void getOffends(int lineNum)
+	public string[] getOffends(int lineNum)
 	{
 		Debug.Log ("Getting Offends");
+		return allPhraseLines[lineNum-1].getOffendsArray();
 	}
 }
