@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Game : MonoBehaviour {
 
+	public Sprite Happy;
+
 	ConversationObject conversation;
 	int startPhraseID = 1;
 	int score;
@@ -73,12 +75,30 @@ public class Game : MonoBehaviour {
 	public void scorePhrase(int choiceLineNum){
 
 		int rating = 0;
+		SpriteRenderer spriteRenderer;
+		Sprite Happy;
 
 		// Check if your date is particularly impressed or offended first
 		foreach (string impressee in conversation.getImpresses(choiceLineNum))
 			if (impressee == "COWBOY") {
 				Debug.Log ("Your date loved that");
 				rating = 10;
+
+				//Change the sprite to be happy
+				//GameObject.Find ("Date").GetComponent<SpriteRenderer> ().sprite = 
+					//	Resources.Load("Sprites/Happy.png") as Sprite;
+				Sprite sprite = GameObject.Find ("Date").GetComponent<SpriteRenderer> ().sprite;
+				if (sprite == null)
+					Debug.Log ("Couldn't find the date");
+				else {
+					Debug.Log (sprite.ToString());
+				}
+				sprite = (Sprite) Resources.Load<Sprite>("Sprites/Happy");
+				if ((Sprite) Resources.Load<Sprite>("Sprites/Happy") == null)
+					Debug.Log("Couldn't find asset happy");
+				else
+					Debug.Log ("Set happy");
+
 				break;
 			}
 
@@ -86,12 +106,18 @@ public class Game : MonoBehaviour {
 			if (offendee == "COWBOY") {
 				Debug.Log ("Your date hated that");
 				rating = -10;
+
+				//Change the sprite to be sad
+
 				break;
 			}
 		
 		// If not, add the general rating
 		if (rating == 0) {
 			rating = conversation.getGeneralRating (choiceLineNum);
+
+			//Change the sprite to be neutral
+
 		}
 
 		// Append this rating to the total score and set it
