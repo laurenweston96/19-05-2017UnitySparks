@@ -2,11 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game.cs">
     <Files>
-      <File FileName="Assets\Scripts\ConversationObject.cs" Line="50" Column="1" />
-      <File FileName="Assets\Scripts\Game.cs" Line="22" Column="87" />
-      <File FileName="Assets\Scripts\LineValues.cs" Line="48" Column="36" />
-      <File FileName="Assets\phrases.txt" Line="4" Column="41" />
-      <File FileName="Assets\Scripts\ButtonManager.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\ConversationObject.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game.cs" Line="94" Column="36" />
+      <File FileName="Assets\Scripts\LineValues.cs" Line="1" Column="1" />
+      <File FileName="Assets\phrases.txt" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ButtonManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Dater.cs" Line="16" Column="69" />
     </Files>
   </MonoDevelop.Ide.Workbench>
