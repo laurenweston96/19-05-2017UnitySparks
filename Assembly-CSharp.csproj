@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ButtonManager.cs" />
      <Compile Include="Assets\Scripts\ConversationObject.cs" />
+     <Compile Include="Assets\Scripts\Dater.cs" />
      <Compile Include="Assets\Scripts\Game.cs" />
      <Compile Include="Assets\Scripts\LineValues.cs" />
      <None Include="Assets\phrases.txt" />

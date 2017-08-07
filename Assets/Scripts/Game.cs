@@ -9,6 +9,7 @@ public class Game : MonoBehaviour {
 	ConversationObject conversation;
 	int startPhraseID = 1;
 	int score;
+	Dater date;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,16 @@ public class Game : MonoBehaviour {
 
 		setPhrasesFromLine(1);
 
+		date = new Dater ();
+
+		Debug.Log ("Your dates is a " + (int)date.getCharacter () + "\nA cowboy is " + (int)Dater.Character.COWBOY);
+		if ((int)date.getCharacter () != (int)Dater.Character.COWBOY)
+			GameObject.Find ("Character").GetComponent<SpriteRenderer>().enabled = false;
+			
+
+		GameObject.Find ("Information Text").GetComponent<Text> ().text = 
+			"You are on a date with a " + date.getPersonality().ToString().ToLower() 
+			+ " " + date.getCharacter().ToString().ToLower();
 		GameObject.Find ("Sentence").GetComponent<Text> ().text = "";
 	}
 	
