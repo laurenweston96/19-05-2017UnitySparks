@@ -34,20 +34,6 @@ public class LineValues {
 		// An array of all the people who are offended by the phrase
 		offends = lineParts [4].Split('.');
 
-		Debug.Log ("ID of next phrase: " + IDOfNextPhrase
-				+ "\nPhrase: " + phrase
-				+ "\nRating: " + generalRating);
-
-	}
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	public int getIDOfNextPhrase() {

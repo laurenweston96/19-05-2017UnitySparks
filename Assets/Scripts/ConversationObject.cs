@@ -16,8 +16,6 @@ public class ConversationObject {
 			lineValues = new LineValues (line);
 			allPhraseLines.Add (lineValues);
 		}
-
-		Debug.Log("All lines are now added");
 	}
 
 	public int getIDOfNextPhrase(int lineNum)

@@ -21,20 +21,7 @@ public class Game : MonoBehaviour {
 
 		date = new Dater ();
 
-		Debug.Log ("Your dates is a " + (int)date.getCharacter () + "\nA cowboy is " + (int)Dater.Character.COWBOY);
-		if ((int)date.getCharacter () != (int)Dater.Character.COWBOY)
-			GameObject.Find ("Character").GetComponent<SpriteRenderer>().enabled = false;
-			
-
-		GameObject.Find ("Information Text").GetComponent<Text> ().text = 
-			"You are on a date with a " + date.getPersonality().ToString().ToLower() 
-			+ " " + date.getCharacter().ToString().ToLower();
 		GameObject.Find ("Sentence").GetComponent<Text> ().text = "";
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	public void madeChoice(Button button) {
@@ -96,19 +83,7 @@ public class Game : MonoBehaviour {
 				rating = 10;
 
 				//Change the sprite to be happy
-				//GameObject.Find ("Date").GetComponent<SpriteRenderer> ().sprite = 
-					//	Resources.Load("Sprites/Happy.png") as Sprite;
-				Sprite sprite = GameObject.Find ("Date").GetComponent<SpriteRenderer> ().sprite;
-				if (sprite == null)
-					Debug.Log ("Couldn't find the date");
-				else {
-					Debug.Log (sprite.ToString());
-				}
-				sprite = (Sprite) Resources.Load<Sprite>("Sprites/Happy");
-				if ((Sprite) Resources.Load<Sprite>("Sprites/Happy") == null)
-					Debug.Log("Couldn't find asset happy");
-				else
-					Debug.Log ("Set happy");
+				date.setDateImg ("Cowboy",2);
 
 				break;
 			}
@@ -119,6 +94,7 @@ public class Game : MonoBehaviour {
 				rating = -10;
 
 				//Change the sprite to be sad
+				date.setDateImg ("Cowboy", 0);
 
 				break;
 			}
@@ -128,6 +104,7 @@ public class Game : MonoBehaviour {
 			rating = conversation.getGeneralRating (choiceLineNum);
 
 			//Change the sprite to be neutral
+			date.setDateImg ("Cowboy", 1);
 
 		}
 
